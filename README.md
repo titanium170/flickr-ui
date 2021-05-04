@@ -1,27 +1,10 @@
 # FlickrUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
+## Get started
 
-## Development server
+To run this application, [Node](https://nodejs.org/en/download/) ([10.13.x](https://nodejs.org/dist/v10.13.0/)/[12.11.x](https://nodejs.org/dist/v12.11.1/) or later) must be installed. Additionally, it may be useful to have Angular CLI and Typescript installed globally.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Once Node is installed run `npm install` at the root of this repository, this will download the third-party dependencies.
 
-## Code scaffolding
+To run the application locally, simply use `npm start`. Once running, the application will be available at `http://localhost:4200/`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
