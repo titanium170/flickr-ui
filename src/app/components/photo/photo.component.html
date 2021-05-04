@@ -1,0 +1,19 @@
+<div class="photo__container">
+  <mat-card>
+      <img mat-card-image [src]="photo.media" alt="Image could not be loaded" loading="lazy" (click)="openLink()">
+    <mat-card-header>
+      <mat-card-title>
+        <a [href]="photo.link" target="_blank" [title]="photo.title">{{ photo.title }}</a>
+      </mat-card-title>
+      <mat-card-subtitle>by <a [href]="photo.author_profile" target="_blank">{{ photo.author }}</a></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p><span>Tags:</span>
+        <mat-chip-list aria-label="tags">
+          <mat-chip *ngFor="let tag of photo.tags | slice:0:5;" class="tag">{{ tag }}</mat-chip>
+          <mat-chip *ngIf="photo.tags.length > 5" class="tag expand">+ {{photo.tags.length - 5}} more</mat-chip>
+        </mat-chip-list>
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,56 @@
+.photo__container {
+  max-width: 350px;
+  margin: 10px;
+  height: 100%;
+}
+
+
+.mat-card-header {
+  margin-bottom: 0.5rem;
+}
+
+.mat-card-title {
+  margin-right: 0.5rem !important;
+  font-size: 1.2rem;
+}
+
+.mat-card-title, .mat-card-subtitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  margin: 0px;
+}
+
+.mat-card-content p {
+  display: flex;
+}
+
+img {
+  object-fit: contain;
+  height: 350px;
+  transition: all 500ms;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: 999;
+    position: relative;
+  }
+}
+
+.tag {
+  margin-right: 5px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0px 8px;
+  min-height: 20px;
+  margin: 4px 0px !important;
+
+  &.expand {
+    font-weight: 500;
+  }
+}
+
+p span {
+  margin-right: 0.5rem;
+}

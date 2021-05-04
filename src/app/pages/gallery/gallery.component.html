@@ -1,0 +1,21 @@
+<section>
+  <header>
+    <h1>Flickr Photo Stream</h1>
+  </header>
+  <form class="search-form"  (keydown.enter)="search(searchBox.value.split(','))" novalidate>
+    <mat-form-field>
+      <mat-label>Search by tags</mat-label>
+      <input matInput placeholder="Cat, Funny" #searchBox>
+    </mat-form-field>
+  </form>
+  <div class="photo-gallery__container">
+    <ng-container *ngIf="photos$ | async as photos; else loading">
+      <app-photo *ngFor="let photo of photos" [photo]="photo"></app-photo>
+    </ng-container>
+  </div>
+</section>
+
+
+<ng-template #loading>
+  <mat-spinner></mat-spinner>
+</ng-template>
